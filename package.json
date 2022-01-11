@@ -1,0 +1,22 @@
+{
+  "name": "data-mocker-js",
+  "version": "1.0.0",
+  "description": "Fake data generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielduumont/data-mocker-js.git"
+  },
+  "keywords": [
+    "data-mocker-js"
+  ],
+  "author": "gabrielduumont",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielduumont/data-mocker-js/issues"
+  },
+  "homepage": "https://github.com/gabrielduumont/data-mocker-js#readme"
+}
