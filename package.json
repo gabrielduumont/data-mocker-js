@@ -1,5 +1,5 @@
 {
-  "name": "data-mocker-js",
+  "name": "@gabrielduumont/data-mocker-js",
   "version": "1.0.0",
   "description": "Fake data generator.",
   "main": "index.js",
