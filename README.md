@@ -1,5 +1,5 @@
 # @gabrielduumont/data-mocker-js
-v.1.0.3
+v.1.0.4
 Mock data generator. 
 Fast development and testing for front-end taks.
 
@@ -79,9 +79,6 @@ var paragraph = dataMocker.strings.paragraph();
 
 // Get a random text (multiple paragraphs)
 var bigText = dataMocker.strings.bigText();
-
-// Get a random text in HTML (multiple paragraphs)
-var bigTextHtml = dataMocker.strings.bigTextHtml();
 
 ```
 
