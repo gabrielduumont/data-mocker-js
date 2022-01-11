@@ -1,5 +1,5 @@
 # @gabrielduumont/data-mocker-js
-v.1.0.4
+v.1.1.0
 Mock data generator. 
 Fast development and testing for front-end taks.
 
