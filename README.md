@@ -76,6 +76,27 @@ var bigText = dataMocker.strings.bigText();
 
 ```
 
+### Text
+
+```js
+const DataMocker = require('@gabrielduumont/data-mocker-js');
+// Instantiate the class
+const dataMocker = new DataMocker();
+
+// Get a random word
+var word = dataMocker.strings.word();
+
+// Get a random phrase
+var phrase = dataMocker.strings.phrase();
+
+// Get a random paragraph
+var paragraph = dataMocker.strings.paragraph();
+
+// Get a random text (multiple paragraphs)
+var bigText = dataMocker.strings.bigText();
+
+```
+
 ## Credits
 
 somewhat inspired on (RIP) fakerjs.
