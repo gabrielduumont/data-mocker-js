@@ -82,6 +82,38 @@ var bigText = dataMocker.strings.bigText();
 
 ```
 
+### React examples
+
+```js
+
+import './App.css';
+import DataMocker from '@gabrielduumont/data-mocker-js';
+
+function App() {
+  const dataMocker = new DataMocker();
+  return (
+    <div className="App">
+        <p>int: {dataMocker.numbers.int()}</p>
+        <p>bigInt: {dataMocker.numbers.bigInt()}</p>
+        <p>hugeInt: {dataMocker.numbers.hugeInt()}</p>
+        <p>smallInt: {dataMocker.numbers.smallInt()}</p>
+        <p>decimal: {dataMocker.numbers.decimal()}</p>
+        <p>bigDecimal: {dataMocker.numbers.bigDecimal()}</p>
+        <p>hugeDecimal: {dataMocker.numbers.hugeDecimal()}</p>
+        <p>smallDecimal: {dataMocker.numbers.smallDecimal()}</p>
+        <p>smallestDecimal: {dataMocker.numbers.smallestDecimal()}</p>
+        <p>word: {dataMocker.strings.word()}</p>
+        <p>phrase: {dataMocker.strings.phrase()}</p>
+        <p>paragraph: {dataMocker.strings.paragraph()}</p>
+        <p>bigText: {dataMocker.strings.bigText()}</p>
+    </div>
+  );
+}
+
+export default App;
+
+```
+
 ## Credits
 
 somewhat inspired on (RIP) fakerjs.
