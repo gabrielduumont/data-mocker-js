@@ -62,21 +62,9 @@ var hugeDecimal = dataMocker.numbers.hugeDecimal();
 // Get a random decimal between 0 and 1000000
 var decimal = dataMocker.numbers.decimal();
 
-// Get a random word
-var word = dataMocker.strings.word();
-
-// Get a random phrase
-var phrase = dataMocker.strings.phrase();
-
-// Get a random paragraph
-var paragraph = dataMocker.strings.paragraph();
-
-// Get a random text (multiple paragraphs)
-var bigText = dataMocker.strings.bigText();
-
 ```
 
-### Text
+### Strings
 
 ```js
 const DataMocker = require('@gabrielduumont/data-mocker-js');
