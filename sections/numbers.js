@@ -1,5 +1,5 @@
 const bigInt = () => {
-  return Math.floor((Math.random() + 1000) * 10);
+  return Math.floor((Math.random() * 1000) * 100);
 }
 
 const smallInt = () => {
@@ -7,7 +7,7 @@ const smallInt = () => {
 }
 
 const hugeInt = () => {
-  return Math.floor((Math.random() + 1000000) * 10);
+  return Math.floor((Math.random() * 1000000) * 100);
 }
 
 const int = () => {
@@ -15,7 +15,7 @@ const int = () => {
 }
 
 const bigDecimal = () => {
-  return ((Math.random() + 1000) * 10);
+  return ((Math.random() * 1000) * 100);
 }
 
 const smallDecimal = () => {
@@ -27,7 +27,7 @@ const smallestDecimal = () => {
 }
 
 const hugeDecimal = () => {
-  return ((Math.random() + 1000000) * 10);
+  return ((Math.random() * 1000000) * 10);
 }
 
 const decimal = () => {
