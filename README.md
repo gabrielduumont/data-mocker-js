@@ -1,5 +1,5 @@
 # @gabrielduumont/data-mocker-js
-v.1.1.0
+v.1.2.0
 Mock data generator. 
 Fast development and testing for front-end taks.
 
@@ -82,6 +82,35 @@ var bigText = dataMocker.strings.bigText();
 
 ```
 
+### Names
+
+Names takes on a 'locale' parameter, which by now the only one default and available is 'BR'. A list of all available locales will be linked here (whenever we have more than just one)
+
+```js
+const DataMocker = require('@gabrielduumont/data-mocker-js');
+// Instantiate the class
+const dataMocker = new DataMocker();
+
+// Get a random first name
+var firstName = dataMocker.names.firstName();
+
+// Get a random last name
+var lastName = dataMocker.names.lastName();
+
+// Get a random fullname
+var fullname = dataMocker.names.fullname();
+
+// Get a random city name
+var cities = dataMocker.names.cities();
+
+// Get a random brand name
+var brand = dataMocker.names.brand();
+
+// Get a random brand name (with locale example)
+var usBrand = dataMocker.names.brand('US'); // not available at the moment, but will be in the future (hopefully with more contributors :)
+var canadaBrand = dataMocker.names.brand('CA'); // not available at the moment, but will be in the future (hopefully with more contributors :)
+
+```
 ### React examples
 
 ```js
