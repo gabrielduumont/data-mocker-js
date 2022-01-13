@@ -1,7 +1,7 @@
 # @gabrielduumont/data-mocker-js
-v.1.2.0
+v.1.2.1
 Mock data generator. 
-Fast development and testing for front-end taks.
+Fast development and testing for front-end tasks.
 
 ## Installing
 
@@ -140,6 +140,52 @@ function App() {
 }
 
 export default App;
+
+```
+
+### Testing examples
+
+```js
+const DataMocker = require('@gabrielduumont/data-mocker-js');
+
+const dataMocker = new DataMocker();
+
+const testMethod = (
+  methodName,
+  min = 0,
+  max = 1,
+) => {
+  const executions = dataMocker.numbers.bigInt();
+  const result = [...Array(executions).keys()]
+    .map(item => {
+      const resultFromMethod = dataMocker.numbers[methodName]();
+      return resultFromMethod >= min && resultFromMethod <= max;
+    })
+    .every(item => (!!item));
+  console.log(`${methodName} (test runs: ${executions})`)
+  if (result) {
+    console.log(`--result: ok`)
+  }
+  else {
+    console.log(`--result: error`)
+  }
+}
+
+testMethod('bigInt', 1000, 100000);
+testMethod('smallInt', 0, 10);
+testMethod('hugeInt', 1000000, 100000000);
+testMethod('int', 0, 100000000);
+testMethod('bigDecimal', 1000, 100000);
+testMethod('smallDecimal', 0, 10);
+testMethod('smallestDecimal', 0, 1);
+testMethod('hugeDecimal', 1000000, 100000000);
+testMethod('decimal', 0, 100000000);
+
+
+const moreExecutions = dataMocker.numbers.smallInt();
+const result = [...Array(moreExecutions).keys()].forEach(item => {
+  testMethod('bigInt', 1000, 100000);
+})
 
 ```
 
