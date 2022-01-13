@@ -1,37 +1,41 @@
+const getRndNumber = (min = 0, max = 9) => {
+  return (Math.random() * (max - min) ) + min;
+}
+
 const bigInt = () => {
-  return Math.floor((Math.random() * 1000) * 100);
+  return Math.floor(getRndNumber(1000,100000));
 }
 
 const smallInt = () => {
-  return Math.floor((Math.random()) * 10);
+  return Math.floor(getRndNumber());
 }
 
 const hugeInt = () => {
-  return Math.floor((Math.random() * 1000000) * 100);
+  return Math.floor(getRndNumber(1000000, 100000000));
 }
 
 const int = () => {
-  return Math.floor((Math.random()) * 1000000);
+  return Math.floor(getRndNumber(0,100000000));
 }
 
 const bigDecimal = () => {
-  return ((Math.random() * 1000) * 100);
+  return getRndNumber(1000,100000);
 }
 
 const smallDecimal = () => {
-  return ((Math.random()) * 10);
+  return getRndNumber();
 }
 
 const smallestDecimal = () => {
-  return ((Math.random()));
+  return getRndNumber(0,1);
 }
 
 const hugeDecimal = () => {
-  return ((Math.random() * 1000000) * 10);
+  return getRndNumber(1000000, 100000000);
 }
 
 const decimal = () => {
-  return ((Math.random()) * 1000000);
+  return getRndNumber(0,100000000);
 }
 
 class DMNumbers {
